@@ -1,0 +1,148 @@
+:root{
+    --color1: rgb(1, 205, 219);
+    --color2: rgba(23, 180, 83, 0.877);
+    --color3: rgba(227, 125, 218, 0.623);
+    --fondo: #f2f2f2;
+    --titulos: 33px;
+    --margenes: 60px;
+    --espacios: 10px;
+    --espacios-contenido:45px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'open sans';
+    background: var(--fondo);
+    position: relative;
+    background: linear-gradient(to bottom,
+    rgba(22, 215, 12, 0.856),
+    rgba(255, 240, 101, 0.876),
+    rgba(255, 255, 255, 0.445)
+    ), url(img/fondo.jpg);
+    background-attachment: fixed;
+    background-position: center -100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  header{
+    width: 100%;
+    backdrop-filter: blur(10px);
+    z-index:10px;
+    position: sticky;
+    top: 0;
+  }
+
+  nav{
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+  }
+  
+  .nav1{
+    background: transparent;
+    height: 80px;
+    color:#fff; /*color del texto dentro de este nav*/
+  }
+  /*El siguiente estilo aplica a un nombre de clase (nav2) que se asigna mediante JavaScript*/
+  .nav2{
+    background: var(--fondo);
+    height:100px;
+    color:#000; /*color del texto dentro de este segundo estilo para el nav*/
+  }
+  
+  .contenedor-nav{
+    display: flex;
+    margin: auto; /*el elemento toma el ancho que le doy, y después tomará el espacio sobrante para establecer automáticamente las márgenes*/
+    width: 90%;
+    justify-content: space-between; /*espacio adecuado entre los diferentes elementos de este contenedor*/
+    align-items: center;  /*Los elementos se centran automáticamente con respecto a la parte superior e inferior del contenedor, es decir, en el eje y*/
+    max-width:1000px;
+    height:inherit;
+    overflow: hidden;
+  }
+  nav .enlaces a{  /*Aquí estoy diciendo que se aplica el estilo a la etiqueta a de la clase enlaces del elemento nav*/
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 17px;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit; /*se hereda el color de texto del nav como se definió ya en nav1*/
+  }
+  nav .enlaces a:hover{
+    border-bottom: 3px solid #1512ce;
+    transition: 0.6s;
+  }
+  .logo, .logo img{ height:80px;}
+  
+  .icono{
+    display:none;
+    font-size: 24px;
+    padding: 23.5px 20px;
+  }
+
+  h1{
+    margin: auto;
+
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(101, 98, 98);
+    border-radius: 50px;
+    width: 40%;
+    padding: 10px 10px;
+    margin: auto;
+    text-align: center;
+    
+  }
+
+  form>div{
+display: flex;
+flex-direction: row;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+padding: 0px 20px;
+  }
+
+  form>p{
+    font-weight: bold;
+    font-size: medium;
+    margin: 10px;
+  }
+  form>h2 {
+    margin: 20px;
+
+  }
+
+  form textarea{
+    width: 100%;
+    margin: auto;
+  }
+
+  form>button {
+    width: fit-content;
+    margin: auto;
+
+  }
+
+  form label{
+text-align: start;
+
+  }
+
+.check{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 20px;
+}

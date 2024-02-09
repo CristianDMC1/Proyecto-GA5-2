@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Id</title>
+    <link rel="stylesheet" href="./form_id.css">
+    
+</head>
+<body>
+    <header>
+        <nav id="nav" class="nav1">
+            <div class="contenedor-nav">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+
+                </div>
+             
+                <div class="icono" id="open">
+                    <span>&#9776;</span>
+                </div>
+            </div>
+        </nav>
+        </header>
+    <h1> FORMULARIO ANÓNIMO </h1>
+    <form action="/submit_pqrs" method="post">
+        <h2>Información de Petición</h2>
+       
+      
+        <div>
+            <label for="asuntoInteres">Asunto de Interés:</label>
+            <select id="asuntoInteres" name="asuntoInteres">
+                <option value="queja">Queja</option>
+                <option value="reclamo">Reclamo</option>
+                <option value="peticion">Petición</option>
+                <option value="consulta">Consulta</option>
+                <option value="solicitud">Solicitud</option>
+                <option value="denuncia">Denuncia</option>
+                <option value="felicitaciones">Felicitaciones</option>
+            </select>
+       </div>
+
+       
+      
+         <div>
+            <label for="clasificacionSolicitud">Clasificación de la Solicitud:</label>
+            <select id="clasificacionSolicitud" name="clasificacionSolicitud">
+                <option value="interesGeneral">Interés General</option>
+                <option value="interesParticular">Interés Particular</option>
+            </select>
+         </div>
+      
+        
+         <p>Desea recibir respuesta por:</p>
+         <div class="check">
+             <label for="respuestaEmail">Correo Electrónico</label>
+             <input type="checkbox" id="respuestaEmail" name="respuestaEmail" value="email">
+         </div>
+         <div class="check">
+             <label for="respuestaDireccion">Dirección de Correspondencia</label>
+             <input type="checkbox" id="respuestaDireccion" name="respuestaDireccion" value="direccion">
+         </div>
+
+        
+          <!-- Otras opciones -->
+        </select>
+        
+       
+       
+        <div>
+            <label for="grupoDeInteres">¿Pertenece a algún Grupo de Interés?:</label>
+            <select id="grupoDeInteres" name="grupoDeInteres">
+                <option value="otro">Otro</option>
+                <option value="servidorPúblico">Servidor Público</option>
+                <option value="OrganizacionesSociales">Organización Social</option>
+                <option value="Sindicatos">Sindicato</option>
+                <option value="VeedorCiudadano">Veedor Ciudadano</option>
+                <option value="ciudadano">Ciudadano</option>
+                <option value="empresa">Empresa</option>
+                <option value="entidadPublica">Entidad Pública</option>
+                <option value="proveedores">Proveedor</option>
+                <option value="contratistas">Contratista</option>
+        </select>
+        </div>
+        
+        
+        
+      
+        <div>
+            <label for="estrato">Estrato:</label>
+            <select id="estrato" name="estrato">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+        </select>
+        </div>
+        <div>
+            <label for="escolaridad">Escolaridad:</label>
+            <select id="escolaridad" name="escolaridad">
+                <option value="primaria">Primaria</option>
+                <option value="segundaria">Segundaria</option>
+                <option value="profesional">Prefesional</option>
+                <option value="especializado">Especializado</option>
+                <option value="maestria">Maestria</option>
+                <option value="doctorado">Doctorado</option>
+                <option value="tecnico">Técnico</option>
+                <option value="tecnologo">Tecnólogo</option>
+                <option value="sinEstudios">Sin Estudios</option>
+        </select>
+        </div>
+        
+       
+        <div>
+        <label for="correoElectronico">Correo Electronico:</label>
+        <input type="text" id="correoElectronico" name="correoElectronico">
+        </div>
+        <!-- Otros campos como primer nombre, segundo nombre, etc. -->
+      
+        <!-- Campos restantes -->
+      
+        <h2>Subir Archivo</h2>
+            <input type= "file" id= "archivoAdjunto" name= "archivoAdjunto">
+      
+        <h2>Objetivo de su PQRS</h2>
+        <div>
+            <textarea cols="50" id= "objetivoPQRS" name= "objetivoPQRS"></textarea>
+        </div>
+        <div class="check">
+            <label for= "aceptaTerminosCondiciones">Acepta términos y condiciones</label>
+            <input type= "checkbox" id= "aceptaTerminosCondiciones" name= "aceptaTerminosCondiciones">
+            </div>
+      
+        <button>Enviar</button>
+      </form>
+      
+    </header> 
+</body>
+</html>

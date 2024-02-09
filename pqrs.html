@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos copy.css">
+</head>
+<body>
+    <header>
+        <nav id="nav" class="nav1">
+            <div class="contenedor-nav">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+               
+                <div class="icono" id="open">
+                    <span>&#9776;</span>
+                </div>
+            </div>
+        </nav>
+        <div class="info">
+            <h1>Secretaría de Salud</h1>
+            <h2>Recepción de PQRS</h2>
+            <button id="open-modal">Nueva PQRS</button>
+            
+            
+        </div>
+    </header>
+        <dialog id="mensaje">
+            <div id="container-mensaje"> 
+                 <button id="close">X</button>
+                 
+                <div>
+                    <h3>Mensaje del sistema de información</h3>
+                    <p>
+                        Ciudadano/a tenga en cuenta que la información a registrar en el siguiente formulario se encuentra protegida bajo la Ley del Habeas data -Ley 1581 de 2012, Decreto1377 de 2013- si quiere conocer más sobre esta ley de click:
+                    </p>
+                    <a href="http://www.mintic.gov.co/portal/604/articles-4274_documento.pdf">http://www.mintic.gov.co/portal/604/articles-4274_documento.pdf</a>
+                </div>
+                <div> 
+                    <a href="./form_id.html"><button class="botonPqrs">PQRS con Identificación</button></a>
+                    
+                 
+
+                    <!-- <script> -->
+                      <!-- function irAFormulario() {
+                        window.location.href = "form_id.html";
+                      }
+                    </script> -->
+                  
+
+                    <a href="form_no-id.html"><button class="botonPqrs">PQRS Anónima</button></a>
+
+                </div>
+            </div>
+            </dialog>
+                <script src=""></script>
+                
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<!-- <script src="js/main.js"></script> -->
+
+</body>
+</html>
